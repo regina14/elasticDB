@@ -27,3 +27,4 @@
 2. open your browser to point to monitorIp:8080/WebContent/elasticdb.jsp
 
 # ECommerce
+# elasticDB
