@@ -1,4 +1,4 @@
-package com.bittiger.client;
+package rz.client;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,13 +14,13 @@ import org.kohsuke.args4j.Option;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.bittiger.logic.ActionType;
-import com.bittiger.logic.Controller;
-import com.bittiger.logic.Destroyer;
-import com.bittiger.logic.EventQueue;
-import com.bittiger.logic.Executor;
-import com.bittiger.logic.LoadBalancer;
-import com.bittiger.logic.Monitor;
+import rz.logic.ActionType;
+import rz.logic.Controller;
+import rz.logic.Destroyer;
+import rz.logic.EventQueue;
+import rz.logic.Executor;
+import rz.logic.LoadBalancer;
+import rz.logic.Monitor;
 
 public class ClientEmulator {
 

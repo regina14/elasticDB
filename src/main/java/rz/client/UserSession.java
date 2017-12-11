@@ -1,4 +1,4 @@
-package com.bittiger.client;
+package rz.client;
 
 import java.util.Random;
 import java.util.concurrent.BlockingQueue;
@@ -10,9 +10,9 @@ import java.sql.Statement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.bittiger.logic.LoadBalancer;
-import com.bittiger.logic.Server;
-import com.bittiger.querypool.QueryMetaData;
+import rz.logic.LoadBalancer;
+import rz.logic.Server;
+import rz.querypool.QueryMetaData;
 
 public class UserSession extends Thread {
 	private TPCWProperties tpcw = null;
@@ -164,7 +164,7 @@ public class UserSession extends Thread {
 				String queryclass = computeNextSql(tpcw.rwratio, tpcw.read,
 						tpcw.write);
 				Connection connection = getNextConnection(queryclass);
-				String classname = "com.bittiger.querypool." + queryclass;
+				String classname = "rz.querypool." + queryclass;
 				QueryMetaData query = (QueryMetaData) Class.forName(classname)
 						.newInstance();
 				String command = query.getQueryStr();

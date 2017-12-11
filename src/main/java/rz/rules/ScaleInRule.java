@@ -1,13 +1,13 @@
-package com.bittiger.logic.rules;
+package rz.rules;
 
 import org.easyrules.annotation.Action;
 import org.easyrules.annotation.Condition;
 import org.easyrules.annotation.Rule;
 
-import com.bittiger.client.ClientEmulator;
-import com.bittiger.client.Utilities;
-import com.bittiger.logic.ActionType;
-import com.bittiger.logic.Controller;
+import rz.client.ClientEmulator;
+import rz.client.Utilities;
+import rz.logic.ActionType;
+import rz.logic.Controller;
 
 @Rule(name = "ScaleInRule", description = "Check if we need to remove server for better resource usage")
 public class ScaleInRule {

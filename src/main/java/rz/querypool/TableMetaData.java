@@ -1,4 +1,4 @@
-package com.bittiger.querypool;
+package rz.querypool;
 
 public class TableMetaData {
 	// table attributes

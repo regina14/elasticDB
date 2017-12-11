@@ -1,4 +1,4 @@
-package com.bittiger.logic;
+package rz.logic;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,10 +10,10 @@ import java.util.Vector;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.bittiger.client.ClientEmulator;
-import com.bittiger.client.Utilities;
-import com.bittiger.querypool.CleanStatsQuery;
-import com.bittiger.querypool.StatsQuery;
+import rz.client.ClientEmulator;
+import rz.client.Utilities;
+import rz.querypool.CleanStatsQuery;
+import rz.querypool.StatsQuery;
 
 /**
  * We do not need strong consistency for stats in the monitor

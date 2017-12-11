@@ -1,4 +1,4 @@
-package com.bittiger.logic;
+package rz.logic;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,8 +7,8 @@ import java.io.InputStreamReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.bittiger.client.ClientEmulator;
-import com.bittiger.client.Utilities;
+import rz.client.ClientEmulator;
+import rz.client.Utilities;
 
 public class Destroyer extends Thread {
 

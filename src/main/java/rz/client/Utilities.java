@@ -1,4 +1,4 @@
-package com.bittiger.client;
+package rz.client;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.bittiger.logic.Server;
+import rz.logic.Server;
 
 public class Utilities {
 	private static transient final Logger LOG = LoggerFactory

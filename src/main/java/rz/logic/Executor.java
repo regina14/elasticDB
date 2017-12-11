@@ -1,10 +1,10 @@
-package com.bittiger.logic;
+package rz.logic;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.bittiger.client.ClientEmulator;
-import com.bittiger.client.Utilities;
+import rz.client.ClientEmulator;
+import rz.client.Utilities;
 
 public class Executor extends Thread {
 

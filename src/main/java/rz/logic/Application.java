@@ -1,4 +1,4 @@
-package com.bittiger.logic;
+package rz.logic;
 
 import java.util.ArrayList;
 

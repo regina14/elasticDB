@@ -1,4 +1,4 @@
-package com.bittiger.logic;
+package rz.logic;
 
 public class Server {
 	String ip;

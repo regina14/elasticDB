@@ -13,25 +13,25 @@ for target in $MASTER
 do
 echo "clean DB in $MASTER"
 
-ssh root@$MASTER "/etc/init.d/mysql start"
-ssh root@$target "$SCRIPT_HOME/cleanDB.sh"
+ssh ubuntu@$MASTER "sudo /etc/init.d/mysql start"
+ssh ubuntu@$target "$SCRIPT_HOME/cleanDB.sh"
 done
 
 echo "step 1 stop master/slave process"
-ssh root@$MASTER "/etc/init.d/mysql stop"
+ssh ubuntu@$MASTER "sudo /etc/init.d/mysql stop"
 
 for slave in ${SLAVE[@]} ${CANDIDATE[@]}
 do
 echo "step 1 stop slave $slave"
-ssh root@$slave "/etc/init.d/mysql stop"
+ssh ubuntu@$slave "sudo /etc/init.d/mysql stop"
 done
 
 echo "step 2 initialize master"
 for target in $MASTER
 do
 echo "init $MASTER"
-ssh root@$target "$SCRIPT_HOME/initMaster.sh 1"
-ssh root@$target "mysql --user="$MYSQL_USERNAME" --password="$MYSQL_PASSWORD" < $SCRIPT_HOME/grantMaster.sql"
+ssh ubuntu@$target "$SCRIPT_HOME/initMaster.sh 1"
+ssh ubuntu@$target "mysql --user="$MYSQL_USERNAME" --password="$MYSQL_PASSWORD" < $SCRIPT_HOME/grantMaster.sql"
 done
 
 echo "step 3 get master status"

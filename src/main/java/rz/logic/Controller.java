@@ -1,4 +1,4 @@
-package com.bittiger.logic;
+package rz.logic;
 
 import java.util.Date;
 import java.util.TimerTask;
@@ -8,9 +8,9 @@ import org.easyrules.core.RulesEngineBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.bittiger.client.ClientEmulator;
-import com.bittiger.logic.rules.ScaleInRule;
-import com.bittiger.logic.rules.ScaleOutRule;
+import rz.client.ClientEmulator;
+import rz.rules.ScaleInRule;
+import rz.rules.ScaleOutRule;
 
 public class Controller extends TimerTask {
 	private ClientEmulator c;

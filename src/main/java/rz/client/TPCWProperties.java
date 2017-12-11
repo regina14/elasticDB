@@ -1,4 +1,4 @@
-package com.bittiger.client;
+package rz.client;
 
 import java.util.Arrays;
 import java.util.ResourceBundle;

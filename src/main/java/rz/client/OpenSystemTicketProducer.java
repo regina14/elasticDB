@@ -1,4 +1,4 @@
-package com.bittiger.client;
+package rz.client;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.Random;

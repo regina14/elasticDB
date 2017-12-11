@@ -1,4 +1,4 @@
-package com.bittiger.querypool;
+package rz.querypool;
 
 import java.util.StringTokenizer;
 import java.util.Calendar;

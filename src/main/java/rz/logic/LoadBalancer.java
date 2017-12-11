@@ -1,4 +1,4 @@
-package com.bittiger.logic;
+package rz.logic;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,8 +8,8 @@ import org.easyrules.core.RulesEngineBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.bittiger.client.ClientEmulator;
-import com.bittiger.logic.rules.AvailabilityNotEnoughRule;
+import rz.client.ClientEmulator;
+import rz.rules.AvailabilityNotEnoughRule;
 
 public class LoadBalancer {
 	private List<Server> readQueue = new ArrayList<Server>();

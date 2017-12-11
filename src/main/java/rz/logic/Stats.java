@@ -1,4 +1,4 @@
-package com.bittiger.logic;
+package rz.logic;
 
 public class Stats {
 	public String type;

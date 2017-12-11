@@ -13,8 +13,8 @@ for target in $MASTER
 do
 echo "clean DB in $MASTER"
 
-ssh root@$MASTER "/etc/init.d/mysql start"
-ssh root@$target "$SCRIPT_HOME/cleanDB.sh"
+ssh root@$MASTER "sudo /etc/init.d/mysql start"
+ssh root@$target "sudo $SCRIPT_HOME/./cleanDB.sh"
 done
 
 echo "step 1 stop master/slave process"

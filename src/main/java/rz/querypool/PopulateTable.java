@@ -1,4 +1,4 @@
-package com.bittiger.querypool;
+package rz.querypool;
 
 import java.io.*;
 import java.sql.*;
