@@ -26,3 +26,4 @@
 1. run ./enableMonitors.sh, this will run dstats and open windows for MASTER, SLAVE and CANDIDATE
 2. open your browser to point to monitorIp:8080/WebContent/elasticdb.jsp
 
+# ECommerce
